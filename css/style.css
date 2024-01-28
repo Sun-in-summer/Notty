@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box
+}
+
+*::after {
+    box-sizing: border-box
+}
+
+*:before {
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: 'Eastman';
+    src: local('Eastman Regular'), local('Eastman-Regular'),
+        url('../fonts/Eastman-Regular/Eastman-Regular.woff2') format('woff2'),
+        url('../fonts/Eastman-Regular/Eastman-Regular.woff') format('woff'),
+        url('../fonts/Eastman-Regular/Eastman-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+.intro-sect {
+    font-family: 'Eastman';
+    background-image: url(../img/intro-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    color: #000;
+    text-align: center;
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+    letter-spacing: 0.5px;
+}
+
+.navbar-absolute {
+    position: absolute;
+    width: 100%;
+    z-index: 3
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+.nav-link-btn {
+    border-radius: 40px;
+    border: 2px solid #000;
+    width: 220px;
+    height: 69px;
+    padding: 12px 55px 22px 54px;
+    text-decoration: none;
+    color: black
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: -20px;
+    font-family: 'Eastman';
+
+    padding: 100px 50px;
+    color: #000;
+    text-align: center;
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+    letter-spacing: 0.5px;
+    list-style-type: none;
+
+
+}
+
+.navbar .navbar-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+
+}
+
+
+.navbar-brand img {
+    filter: brightness(0);
+}
+
+.nav-item:not(:last-child) {
+
+    margin-right: 15px;
+}
+
+.navbar-top-line {
+    display: flex;
+    justify-content: flex-end;
+    order: 2;
+    width: calc(100% - 176px);
+    margin: -30px 0 0 auto;
+    list-style: none
+}
+
+.navbar-top-line-tel {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.navbar-top-line .fa-facebook {
+    color: white;
+    font-size: 24px
+}
+
+.navbar-top-line-item {
+    color: white;
+    margin: 0 10px
+}
+
+.navbar-top-line-item:last-of-type {
+    margin-right: 0
+}
+
+.navbar-top-line-item a {
+    color: white;
+    text-decoration: none
+}
+
+.navbar-top-line-lang a {
+    padding: 5px 7px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700
+}
+
+.navbar-top-line-lang .active {
+    background-color: #f0145a
+}
+
+.navbar-brand {
+    order: 1
+}
+
+.navbar-collapse {
+    order: 3
+}
+
+.home-h1 {
+    position: absolute;
+    font-family: Eastman;
+    font-size: 87.281px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98px;
+    letter-spacing: -1.96px;
+    color: black;
+
+    width: 750px;
+
+    font-weight: 500;
+    margin: auto;
+    z-index: 2;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%, -50%)
+}
+
+.intro-sect .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 50px;
+}
+
+.intro-main-text {
+    position: relative;
+    width: 700px;
+    height: 1109px;
+    text-align: left
+}
+
+.intro-sect-cat {
+    position: absolute;
+    left: 40%;
+    top: 240px;
+}
+
+.intro-sect-feeder {
+    position: absolute;
+    right: 20%;
+    bottom: 50px;
+}
+
+.services {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 100px
+}
+
+.services-r-square {
+    width: 92px;
+    height: 92px;
+    background-color: #fff;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 0;
+    line-height: 92px
+}
+
+.section-name {
+    font-family: TT Norms;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: white
+}
+
+.section-header {
+    font-family: TT Norms;
+    font-size: 42px;
+    font-size: clamp(32px, 32px, 42px);
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #f0145a;
+    background: linear-gradient(90.13deg, #f0145a .84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 3px;
+    margin-bottom: 10px
+}
+
+.services-item-header {
+    color: #24a3ff;
+    font-family: TT Norms;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px
+}
+
+.services-item-text {
+    font-family: TT Norms;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 15px
+}
+
+.services-item {
+    margin-top: 58px
+}
+
+.services-shadow-1 {
+    background: #cacadb;
+    border-radius: 0px 0px 12px 12px;
+    margin: 0 20px;
+    height: 10px
+}
+
+.services-shadow-2 {
+    background: #e7e7f2;
+    border-radius: 0px 0px 12px 12px;
+    height: 10px;
+    margin: 0 40px
+}
+
+.team-header {
+    margin-top: 80px;
+    margin-bottom: 80px
+}
+
+.team-item {
+    margin-bottom: 40px
+}
+
+.team-item-pic {
+    border-radius: 12px;
+    object-fit: scale-down;
+    width: 100%
+}
+
+.team-item-person {
+    margin-top: 20px;
+    font-family: TT Norms;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: #323264
+}
+
+.team-item-descr {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #b3b3ba
+}
+
+
+
+@media (min-width: 1400px) {
+    .container-sm {
+        padding: 0px
+    }
+}
+
+@media(max-width: 1265px) {
+    .navbar .navbar-flex {
+
+        justify-content: center;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
+    .navbar-nav {
+        padding: 25px;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar-top-line {
+        width: 100%;
+        margin: 0 0 20px 0;
+        justify-content: space-between;
+        order: initial;
+        padding: 0
+    }
+
+    .navbar-top-line-item {
+        margin: 0
+    }
+
+    .navbar-top-line-item:nth-child(2),
+    .navbar-top-line-item:nth-child(4) {
+        display: none
+    }
+
+    .navbar-brand {
+        order: initial
+    }
+
+
+}
