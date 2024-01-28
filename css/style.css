@@ -41,7 +41,7 @@
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0 90px;
+
 }
 
 .intro-sect {
@@ -63,7 +63,7 @@
 .navbar-absolute {
 
     width: 100%;
-    z-index: 3
+    z-index: 3;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -90,7 +90,7 @@
 
     font-family: 'Eastman';
 
-    padding: 100px 0px;
+    padding: 70px 0px;
     color: #000;
     text-align: center;
 
@@ -220,7 +220,7 @@
 .intro-sect-cat {
     position: absolute;
     left: 30%;
-    top: 150px;
+    top: 130px;
 }
 
 .intro-sect-feeder {
@@ -229,6 +229,8 @@
     right: 10vw;
 
 }
+
+
 
 .intro-sect-details {
     margin-top: 40px;
@@ -532,15 +534,40 @@
 
         justify-content: center;
         padding-top: 20px;
-        padding-left: 0;
+
     }
 
     .navbar-nav {
-        padding: 25px;
+        padding: 15px;
+        margin: 0 10px;
     }
 
     .features-container {
         grid-template-columns: 1fr;
+    }
+
+    .home-h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 300px;
+        margin: 0;
+    }
+
+    .intro-sect .container {
+        padding-left: 10vw;
+    }
+
+    .intro-sect-feeder {
+        transform: scale(70%);
+        transition-duration: 10ms;
+    }
+
+    .intro-sect-cat {
+        transition-duration: 300ms;
+
+        top: 430px;
+
+
     }
 }
 
