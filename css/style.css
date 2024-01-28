@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: 'Eastman';
 }
 
 *::after {
@@ -21,16 +22,35 @@
 }
 
 
+.main-page-intro {
 
+    height: 1109px;
 
-.intro-sect {
-    font-family: 'Eastman';
+}
+
+.main-container {
+    max-width: 1920px;
+    margin: 0 auto;
     background-image: url(../img/intro-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
+    position: relative;
+
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.intro-sect {
+    font-family: 'Eastman';
+
+    padding: 200px 0 150px 0;
     color: #000;
-    text-align: center;
+    text-align: left;
+
+
 
     font-size: 28px;
     font-style: normal;
@@ -40,7 +60,7 @@
 }
 
 .navbar-absolute {
-    position: absolute;
+
     width: 100%;
     z-index: 3
 }
@@ -67,10 +87,9 @@
     display: flex;
     justify-content: space-between;
 
-    margin-top: -20px;
     font-family: 'Eastman';
 
-    padding: 100px 50px;
+    padding: 100px 0px;
     color: #000;
     text-align: center;
 
@@ -90,7 +109,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 50px;
+    padding: 0px 50px;
 
 }
 
@@ -157,11 +176,10 @@
 }
 
 .home-h1 {
-    position: absolute;
-    font-family: Eastman;
+    padding-top: 67px;
+    font-family: 'Eastman';
     font-size: 87.281px;
     font-style: normal;
-    font-weight: 400;
     line-height: 98px;
     letter-spacing: -1.96px;
     color: black;
@@ -173,8 +191,10 @@
     z-index: 2;
     top: 70%;
     left: 55%;
-    transform: translate(-50%, -50%)
+
 }
+
+
 
 .intro-sect .container {
     display: flex;
@@ -183,23 +203,144 @@
     padding-left: 50px;
 }
 
+.intro-sect-left-block {
+    width: 45%;
+
+}
+
+.intro-sect-right-block {}
+
 .intro-main-text {
-    position: relative;
+
     width: 700px;
-    height: 1109px;
     text-align: left
 }
 
 .intro-sect-cat {
     position: absolute;
-    left: 40%;
-    top: 240px;
+    left: 30%;
+    top: 150px;
 }
 
 .intro-sect-feeder {
     position: absolute;
-    right: 20%;
-    bottom: 50px;
+    bottom: 120px;
+    right: 10vw;
+
+}
+
+.intro-sect-details {
+    margin-top: 40px;
+}
+
+
+.intro-sect-details-link {
+    border-radius: 30px;
+    border: 2px solid #000;
+
+    padding: 22px 80px 22px 80px;
+
+    color: #000;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 18.703px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.21px;
+}
+
+.presentation-container {
+    text-align: center;
+    font-weight: 400;
+
+}
+
+
+
+
+.presentation-text {
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+
+    line-height: 38.4px;
+
+    letter-spacing: 0.5px;
+    max-width: 1514px;
+    margin: 84px auto 49px auto;
+
+}
+
+.presentation-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation-logo-right {
+    margin: 15px 0 0 15px;
+}
+
+.presentation-slogan {
+    color: #000;
+
+    text-align: center;
+    /* h3 */
+    font-family: Eastman;
+    font-size: 33.676px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.presentation-products {
+    margin-top: 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.presentation-product {
+    height: 555px;
+    width: 555px;
+    background: linear-gradient(180deg, #D1D1D1 0%, #919597 56.5%, #D9D9D9 100%);
+    position: relative;
+}
+
+.presentation-product-header {
+    font-size: 37.031px;
+}
+
+.presentation-product:last-child.presentation-product-picture {
+    padding-top: 65px;
+}
+
+.presentation-product-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 20px;
+    border-top: 1px solid #808080;
+    position: absolute;
+    bottom: 0px;
+    width: 515px;
+}
+
+.presentation-product-feature,
+.presentation-product-feature-benefit {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.presentation-product-feature-amount,
+.presentation-product-feature-benefit-amount {
+    margin-left: 10px;
+    color: #BE4C00;
+
+    font-size: 14.375px;
+    line-height: 16px;
 }
 
 .services {
