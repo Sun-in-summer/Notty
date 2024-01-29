@@ -11,6 +11,23 @@
     box-sizing: border-box
 }
 
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+
+
+}
+
 @font-face {
     font-family: 'Eastman';
     src: local('Eastman Regular'), local('Eastman-Regular'),
@@ -31,9 +48,8 @@
 .main-container {
     max-width: 1920px;
     margin: 0 auto;
-    background-image: url(../img/intro-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../img/intro-background.png) center center/cover no-repeat;
+
     position: relative;
 
 }
@@ -353,6 +369,8 @@
     margin-top: 60px;
 }
 
+
+
 .features-container {
     grid-template-columns: repeat(2, minmax(0, 792px));
 
@@ -361,6 +379,8 @@
     grid-gap: 30px;
     display: grid;
 }
+
+
 
 
 
@@ -373,11 +393,21 @@
     justify-content: center;
     align-items: center;
     margin-top: 107px;
+
+    animation-name: heartbeat;
+
+    animation-duration: 1s;
+    animation-delay: 1s;
+
+
+
+
+
+
+    transition: 3s all;
 }
 
 .feature-header {
-
-
     font-size: 37.031px;
     font-style: normal;
 
@@ -390,6 +420,110 @@
     letter-spacing: 0.5px;
     max-width: 792px;
     margin-top: 16px;
+}
+
+.devices-benefits-header {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px auto;
+    grid-gap: 40px;
+    display: grid;
+}
+
+.devices-benefits-header {
+    margin-top: 122px;
+}
+
+
+.devices-benefits-slogan {
+    color: #000;
+    font-size: 63.703px;
+    line-height: 75.6px;
+    margin: 0;
+
+}
+
+.devices-benefits-text {
+    margin-top: 231px;
+}
+
+.devices-benefits-button-wrapper,
+.benefits-flex-picture-button-wrapper {
+    margin-top: 55px;
+    position: relative;
+}
+
+.devices-benefits-button,
+.benefits-flex-picture-button {
+
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid #000;
+
+    padding: 22px 80px 22px 80px;
+
+    color: #000;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 18.703px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.21px;
+
+}
+
+.devices-benefits-button::before,
+.benefits-flex-picture-button:before {
+    content: "";
+    position: absolute;
+    background-image: url(../icons/question.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+
+    left: 28px;
+    top: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+
+.devices {
+    grid-template-columns: repeat(2, minmax(370px, 834px));
+    margin: 110px 0 30px;
+    grid-row-gap: 100px;
+    grid-column-gap: 40px;
+    display: grid;
+}
+
+
+
+.benefits-flex-picture {
+    max-width: 800px;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.benefits-flex-list {
+    color: #666;
+    font-size: 33.676px;
+    line-height: 3em;
+    position: relative;
+    list-style: none;
+    counter-reset: my-counter;
+
+}
+
+.benefits-flex-list-item::before {
+    content: '0' counter(my-counter);
+
+    /* Выводим число */
+    counter-increment: my-counter;
+    /* Увеличиваем значение счётчика */
+    position: absolute;
+    transform: translateX(-63px);
+    margin-right: 1.5em;
 }
 
 .services {
@@ -552,19 +686,27 @@
         margin: 0;
     }
 
+    .intro-sect {
+        padding-top: 50px;
+        transition-duration: 200ms;
+    }
+
     .intro-sect .container {
         padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .intro-sect-feeder {
-        transform: scale(70%);
+        transform: scale(60%);
         transition-duration: 10ms;
+        right: 0;
+
     }
 
     .intro-sect-cat {
         transition-duration: 300ms;
-
-        top: 430px;
+        left: 35%;
+        top: 350px;
 
 
     }
