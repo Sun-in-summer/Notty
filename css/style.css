@@ -49,15 +49,16 @@ html {
 
 
 .main-page-intro {
-    background: url(../img/section1banner.png) center center/cover no-repeat;
+    background: url(../img/section1banner2.png) center center/cover no-repeat;
+    background-attachment: fixed;
+
 }
 
 
 
 .main-container {
     height: 100vh;
-    max-height: 1080px;
-
+    
 
 }
 
@@ -222,7 +223,7 @@ html {
     font-family: 'Eastman';
     font-size: 4.5vw;
     font-style: normal;
-    line-height: 4.5vw;
+    line-height: 72px;
     letter-spacing: -1px;
     color: black;
     font-weight: 500;
