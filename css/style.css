@@ -233,7 +233,7 @@ html {
 
     padding-top: 67px;
     font-family: 'Eastman';
-    font-size: 4.5vw;
+    font-size: 84px;
     font-style: normal;
     line-height: 72px;
     letter-spacing: -1px;
@@ -304,7 +304,7 @@ html {
 .intro-sect-details {
     
     grid-area: button;
-    padding: 20px 30px;
+    padding: 20px 30px 0 0;
 }
 
 
