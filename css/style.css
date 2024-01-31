@@ -56,10 +56,22 @@ html {
 
 
 
-.main-container {
+.intro-container {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: 150px 1fr  150px;
+    grid-template-areas:
+    "header header header header"
+    "text text text . "
+    "button .  .  . ";
     height: 100vh;
+    row-gap: 30px;
+    column-gap: 30px;
     
+}
 
+.navbar {
+    grid-area: header;
 }
 
 .container {
@@ -247,8 +259,13 @@ html {
 .intro-sect-right-block {}
 
 .intro-main-text {
-    width: 65%;
-    text-align: left
+
+    text-align: left;
+    grid-area: text;
+    display: flex;
+    
+    align-items: flex-end;
+
 }
 
 .intro-sect-cat {
@@ -285,11 +302,14 @@ html {
 
 
 .intro-sect-details {
-    margin-top: 40px;
+    
+    grid-area: button;
+    padding: 20px 30px;
 }
 
 
 .intro-sect-details-link {
+    
     border-radius: 30px;
     border: 2px solid #000;
 
