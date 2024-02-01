@@ -233,7 +233,7 @@ html {
 
     padding-top: 67px;
     font-family: 'Eastman';
-    font-size: 84px;
+    font-size: clamp(1rem, 0.5588rem + 1.9608vw, 3.5rem);
     font-style: normal;
     line-height: 72px;
     letter-spacing: -1px;
