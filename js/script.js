@@ -2,8 +2,8 @@
 const animationBlock = document.querySelector('.lottie-animation');
     console.log(animationBlock);
 window.addEventListener('load', function () {
-    const preloader = document.querySelector('.preloader');
-    preloader.classList.remove('active');
+    const preloader = document.querySelector('.box');
+    preloader.classList.add('disabled');
     animationBlock.classList.remove('disabled');
 
   
