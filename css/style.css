@@ -18,7 +18,7 @@ html {
 .preloader
  {
     display: none;
-    height: 100vh;
+ 
   }
 
   /* .lottie-animation {
@@ -28,6 +28,16 @@ html {
 .preloader.active
 {
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+   
   }
 
 

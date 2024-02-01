@@ -3,10 +3,7 @@
 window.addEventListener('load', function () {
     const preloader = document.querySelector('.preloader');
     preloader.classList.remove('active');
-
-    
-
-   
+  
 
 // setTimeout(() => {
 //     animationBlock.classList.remove('active');
@@ -48,8 +45,10 @@ const animation = lottie.loadAnimation({
     renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
     loop: true, // зацикливание анимации
     autoplay: false, // автоматический запуск анимации
-    path: './preloader/lottie5.json' // путь к вашему JSON-файлу с анимацией
+    path: './preloader/lottie5.json' ,// путь к вашему JSON-файлу с анимацией
+    setSpeed: 3
 });
+
 
 
 window.addEventListener("scroll", function() {
@@ -57,6 +56,9 @@ window.addEventListener("scroll", function() {
     const isVisible = elemInViewport(animationBlock,true)
     if(isVisible) {
         animation.play();
+    }
+    else {
+        animation.stop();
     }
     })
 
