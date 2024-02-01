@@ -1,7 +1,6 @@
 
-import LocomotiveScroll from 'locomotive-scroll';
 
-const scroll = new LocomotiveScroll();
+// const scroll = new LocomotiveScroll();
 
 const animationBlock = document.querySelector('.lottie-animation');
     console.log(animationBlock);
