@@ -15,6 +15,28 @@ html {
     font-size: 16px;
 }
 
+.preloader
+ {
+    display: none;
+    height: 100vh;
+  }
+
+  /* .lottie-animation {
+
+  } */
+
+.preloader.active
+{
+    display: block;
+  }
+
+
+  /* .lottie-animation-active {
+    height: 300px;
+  }
+   */
+  
+
 
 .hamburger {
     display: none
@@ -257,7 +279,7 @@ html {
 
 }
 
-.intro-sect-right-block {}
+
 
 .intro-main-text {
 
