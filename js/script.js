@@ -1,8 +1,11 @@
 
-
+const animationBlock = document.querySelector('.lottie-animation');
+    console.log(animationBlock);
 window.addEventListener('load', function () {
     const preloader = document.querySelector('.preloader');
     preloader.classList.remove('active');
+    animationBlock.classList.remove('disabled');
+
   
 
 // setTimeout(() => {
@@ -11,8 +14,7 @@ window.addEventListener('load', function () {
 //   }, 7000)
     
 });
-const animationBlock = document.querySelector('.lottie-animation');
-    console.log(animationBlock);
+
 
 // window.addEventListener('scroll', function () {
 //     const scrollPosition = document.documentElement.scrollTop;
@@ -45,7 +47,7 @@ const animation = lottie.loadAnimation({
     renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
     loop: true, // зацикливание анимации
     autoplay: false, // автоматический запуск анимации
-    path: './preloader/lottie5.json' ,// путь к вашему JSON-файлу с анимацией
+    path: './preloader/lottie6.json' ,// путь к вашему JSON-файлу с анимацией
     setSpeed: 3
 });
 
@@ -53,7 +55,7 @@ const animation = lottie.loadAnimation({
 
 window.addEventListener("scroll", function() {
    
-    const isVisible = elemInViewport(animationBlock,true)
+    const isVisible = elemInViewport(animationBlock,true);
     if(isVisible) {
         animation.play();
     }
