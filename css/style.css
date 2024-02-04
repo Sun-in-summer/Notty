@@ -1225,8 +1225,12 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 
 }
 
-.benefits-flex-picture:hover+div {
-    display: block;
+.benefits-flex-picture:hover+.benefits-flex-picture-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition-duration: 1s;
 }
 
 .benefits-flex-picture-text:hover {
