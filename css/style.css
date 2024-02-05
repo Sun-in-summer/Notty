@@ -1348,7 +1348,7 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 
 .connection-picture {
     object-fit: contain;
-    width: calc(100vw - 300px);
+    width: 60vw;
 
     overflow: hidden;
 
