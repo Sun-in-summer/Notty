@@ -1230,6 +1230,7 @@ html {
 
 .benefits-flex-picture:hover+.benefits-flex-picture-text {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: rgba(0, 0, 0, 0.7);
@@ -1239,11 +1240,16 @@ html {
 
 .benefits-flex-picture-text:hover {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     transition: all .7s;
 
+}
+
+.benefits-flex-picture-text-second {
+    line-height: 1px;
 }
 
 /* 
