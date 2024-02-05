@@ -1196,17 +1196,14 @@ html {
     position: relative;
 }
 
+
+
 .benefits-flex-picture {
     max-width: 800px;
     object-fit: cover;
     width: 100%;
 
 }
-
-/* .benefits-flex-picture:hover {
-    filter: brightness(30%);
-    transition: all .3s;
-} */
 
 
 
@@ -1236,7 +1233,13 @@ html {
     /* background-color: rgba(0, 0, 0, 0.7);
     transition: all .5s ease-out;
 } */
+
 }
+
+
+
+
+
 
 .benefits-flex-picture-text:hover {
     display: flex;
@@ -1359,6 +1362,8 @@ html {
 .connection-picture {
     object-fit: contain;
     width: 60vw;
+
+    max-width: 1200px;
 
     overflow: hidden;
 
