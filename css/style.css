@@ -946,7 +946,7 @@ html {
 
 .presentation-product-picture:hover {
     transform: scale(110%);
-    transition-duration: transform .5s;
+    transition: transform .5s;
 }
 
 .presentation-product-header {
