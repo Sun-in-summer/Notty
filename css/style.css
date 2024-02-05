@@ -1118,7 +1118,8 @@ html {
 
 .devices-benefits-slogan,
 .connection-slogan,
-.safety-slogan {
+.safety-slogan,
+.video-title-page-slogan {
     color: #000;
     font-size: clamp(1.2rem, 0.7500rem + 2.0000vw, 2.5rem);
     line-height: clamp(1.2rem, 0.4281rem + 3.4308vw, 3.43rem);
@@ -1392,7 +1393,8 @@ html {
 
 
 
-.connection-text {
+.connection-text,
+.video-title-page-text {
     font-size: clamp(1rem, 0.8702rem + 0.5769vw, 1.375rem);
 
 }
@@ -1420,6 +1422,84 @@ html {
     margin: 0 auto;
 }
 
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+}
+
+.video-title-page {
+    position: relative;
+}
+
+.video-title-page-picture {
+
+    width: 100%;
+
+}
+
+.video-title-page-slogan {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    color: white;
+    padding-left: 50px;
+}
+
+
+.video-title-page-text {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 0;
+
+    color: white;
+    padding-left: 50px;
+}
+
+.icon-wrapper {
+    height: 93px;
+    width: 93px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    background-color: white;
+    margin-left: 50px;
+}
+
+.icon-wrapper::after {
+    position: absolute;
+    content: "Смотреть";
+    color: white;
+    margin-left: 120px;
+    font-size: 1.68rem;
+    line-height: 93px;
+}
+
+.arrow-icon {
+    position: absolute;
+    height: 18px;
+    width: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 @media(max-width: 1720px) {
 
