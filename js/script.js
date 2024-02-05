@@ -34,7 +34,7 @@ const animation = lottie.loadAnimation({
   renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
   loop: true, // зацикливание анимации
   autoplay: false, // автоматический запуск анимации
-  path: './preloader/lottieMAIN.json', // путь к вашему JSON-файлу с анимацией
+  path: './preloader/lottie6.json', // путь к вашему JSON-файлу с анимацией
   setSpeed: 1,
 });
 
