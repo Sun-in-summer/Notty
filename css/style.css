@@ -946,7 +946,7 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 
 .presentation-product-picture:hover {
     transform: scale(110%);
-    transition-duration: 500ms;
+    transition-duration: transform .5s;
 }
 
 .presentation-product-header {
@@ -1074,7 +1074,7 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
     animation-duration: 1s;
     animation-delay: 1s;
 
-    transition: 3s all;
+    transition: all .3s;
 }
 
 .feature-logo-wrapper svg {
@@ -1202,10 +1202,10 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 
 }
 
-.benefits-flex-picture:hover {
+/* .benefits-flex-picture:hover {
     filter: brightness(30%);
-    transition-duration: 500ms;
-}
+    transition: all .3s;
+} */
 
 
 
@@ -1229,8 +1229,9 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    transition-duration: 1s;
+    /* background-color: rgba(0, 0, 0, 0.7);
+    transition: all .5s ease-out;
+} */
 }
 
 .benefits-flex-picture-text:hover {
@@ -1238,7 +1239,7 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-    transition-duration: 1s;
+    transition: all .7s;
 
 }
 
@@ -1250,6 +1251,7 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
     transform: translate(-50%, -50%);
     border-bottom: 1px solid white;
     content: "";
+    transition: all .5s;
 }
 
 .benefits-flex-list,
@@ -1390,13 +1392,13 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 
     .intro-sect-feeder {
         transform: scale(60%);
-        transition-duration: 10ms;
+        transition: transform 1s;
         right: 0;
 
     }
 
     .intro-sect-cat {
-        transition-duration: 300ms;
+        transition: all .3s;
         left: 35%;
         top: 350px;
 
@@ -1550,7 +1552,7 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 
     .connection-picture {
         filter: opacity(35%);
-        transition-duration: 1s;
+        transition: filter 1s;
 
     }
 
