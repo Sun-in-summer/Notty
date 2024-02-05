@@ -485,8 +485,9 @@ html {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #e7dfdd;
-    background-image: linear-gradient(#e7dfdd, #f3efd5, #e7dfdd);
+    background-color: white;
+    /* background-color: #e7dfdd; */
+    /* background-image: linear-gradient(#e7dfdd, #f3efd5, #e7dfdd); */
     z-index: 999999;
 
 }
