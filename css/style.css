@@ -883,11 +883,10 @@ html {
     margin: 15px 0 0 15px;
 }
 
-.presentation-slogan,
-{
-color: #000;
-text-align: center;
-font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
+.presentation-slogan {
+    color: #000;
+    text-align: center;
+    font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 }
 
 .presentation-products {
@@ -1087,6 +1086,7 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 .feature-header {
     font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
     font-style: normal;
+    margin-top: 27px;
 
 }
 
@@ -1216,13 +1216,15 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
     color: white;
     font-size: clamp(1rem, 0.6538rem + 1.5385vw, 2rem);
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    top: 0;
+    left: 0;
     text-align: center;
     margin: auto;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 4px);
 
 }
 
@@ -1244,16 +1246,17 @@ font-size: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
 
 }
 
+/* 
 .benefits-flex-picture-text:before {
     position: absolute;
     bottom: -10px;
     left: 50%;
     width: 20%;
     transform: translate(-50%, -50%);
-    border-bottom: 1px solid white;
-    content: "";
-    transition: all .5s;
-}
+    /* border-bottom: 1px solid white; */
+/* content: "";
+    transition: all .5s; */
+/* } */
 
 .benefits-flex-list,
 .connection-flex-list {
