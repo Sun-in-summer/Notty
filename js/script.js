@@ -47,30 +47,65 @@ window.addEventListener('scroll', function () {
 const playButton = document.querySelector('.video-icon-wrapper');
 const videoWrapper = document.querySelector('.video-wrapper');
 const videoTitlePage = document.querySelector('.video-title-page');
-const video = document.querySelector('.video');
+// const video = document.querySelector('.video');
+
+function loadVideo() {
+  console.info(`loadVideo called`);
+
+  (function loadYoutubeIFrameApiScript() {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    tag.onload = setupPlayer;
+  })();
+
+  let player = null;
+
+  function setupPlayer() {
+    window.YT.ready(function () {
+      player = new window.YT.Player('player', {
+        height: '720',
+        width: '1400',
+        videoId: '-7BFrSqkc0o',
+        events: {
+          onReady: onPlayerReady,
+          //   onStateChange: onPlayerStateChange,
+        },
+      });
+    });
+  }
+
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }
+
+  //   function onPlayerStateChange(event) {
+  //     var videoStatuses = Object.entries(window.YT.PlayerState);
+  //     console.log(videoStatuses.find((status) => status[1] === event.data)[0]);
+  //   }
+}
+
+// if (document.readyState !== 'loading') {
+//   console.info(`document.readyState ==>`, document.readyState);
+//   loadVideo();
+// } else {
+//   document.addEventListener('DOMContentLoaded', function () {
+//     console.info(`DOMContentLoaded ==>`, document.readyState);
+//     videoTitlePage.style.display = 'none';
+//     // videoWrapper.style.display = 'block';
+//     loadVideo();
+//   });
+// }
+
 playButton.addEventListener('click', function () {
   videoTitlePage.style.display = 'none';
   videoWrapper.style.display = 'block';
-  video.style.display = 'block';
-  video.src =
-    'http://www.youtube.com/embed/-7BFrSqkc0o?enablejsapi&autoplay=1&rel=0';
+
+  loadVideo();
+  //   video.style.display = 'block';
+  //   video.src =
+  //     'http://www.youtube.com/embed/-7BFrSqkc0o?enablejsapi&autoplay=1&rel=0';
 });
-
-var player;
-
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-  console.log('ready ');
-}
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    playerVars: { autoplay: 1, controls: 0 },
-    events: {
-      onReady: onPlayerReady,
-    },
-  });
-  let duration = player.getDuration();
-  console.log(duration);
-}
