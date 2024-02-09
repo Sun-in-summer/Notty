@@ -1416,17 +1416,24 @@ html {
     margin-top: 43px;
 }
 
+.video-frame {
+    padding-bottom: 50px;
+}
 
 .video-frame-container {
     max-width: 1400px;
     margin: 0 auto;
+    display: flex;
 }
 
 .video-wrapper {
     position: relative;
+    display: none;
     padding-bottom: 56.25%;
     /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
-    height: 0;
+    width: 100vw;
+    /* height: 100vh; */
+
     overflow: hidden;
 }
 
@@ -1451,11 +1458,20 @@ html {
 
 }
 
-.video-title-page-slogan {
+.video-title-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: absolute;
-    width: 100%;
-    top: 0;
     left: 0;
+    top: 0;
+}
+
+.video-title-page-slogan {
+
+    width: 100%;
+
 
     color: white;
     padding-left: 50px;
@@ -1463,27 +1479,28 @@ html {
 
 
 .video-title-page-text {
-    position: absolute;
-    width: 30%;
-    top: 20%;
-    left: 0;
+
+    width: 70%;
+
 
     color: white;
     padding-left: 50px;
+    padding-top: 50px;
 }
 
-.icon-wrapper {
+.video-icon-wrapper {
+    position: relative;
     height: 93px;
     width: 93px;
     border-radius: 50%;
-    position: absolute;
-    top: 35%;
-    left: 0;
+
     background-color: white;
     margin-left: 50px;
+    margin-top: 50px;
+    cursor: pointer;
 }
 
-.icon-wrapper::after {
+.video-icon-wrapper::after {
     position: absolute;
     content: "Смотреть";
     color: white;
@@ -1492,7 +1509,7 @@ html {
     line-height: 93px;
 }
 
-.arrow-icon {
+.video-arrow-icon {
     position: absolute;
     height: 18px;
     width: 13px;
