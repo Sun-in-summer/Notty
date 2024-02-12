@@ -1093,7 +1093,7 @@ html {
 
 .feature-text {
     font-size: clamp(0.75rem, 0.6202rem + 0.5769vw, 1.125rem);
-    line-height: 38.4px;
+    line-height: clamp(1rem, 0.8269rem + 0.7692vw, 1.5rem);
     letter-spacing: 0.5px;
     max-width: 792px;
     margin-top: 16px;
@@ -1416,9 +1416,6 @@ html {
     margin-top: 43px;
 }
 
-.video-frame {
-    padding-bottom: 50px;
-}
 
 .video-frame-container {
     max-width: 1400px;
@@ -1429,32 +1426,44 @@ html {
 .video-wrapper {
     position: relative;
     display: none;
-    padding-bottom: 56.25%;
-    /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
-    width: 100vw;
-    /* height: 100vh; */
+
+
+    width: 100%;
+    height: 100%;
+
 
     overflow: hidden;
+    padding-bottom: 75%;
 }
 
-.video {
+
+#player {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+
+    width: 100vw;
     height: 100%;
     border-width: 0;
     outline-width: 0;
+
+
+
 }
 
 .video-title-page {
     position: relative;
+
 }
 
 .video-title-page-picture {
 
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
 
 }
 
@@ -1475,28 +1484,30 @@ html {
 
     color: white;
     padding-left: 50px;
+    padding-top: 5%;
+    text-shadow: 1px 1px black;
 }
 
 
 .video-title-page-text {
 
     width: 70%;
-
-
     color: white;
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 5%;
+    text-shadow: 1px 1px black;
 }
 
 .video-icon-wrapper {
     position: relative;
+
     height: 93px;
     width: 93px;
     border-radius: 50%;
 
     background-color: white;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 5%;
     cursor: pointer;
 }
 
@@ -1507,6 +1518,7 @@ html {
     margin-left: 120px;
     font-size: 1.68rem;
     line-height: 93px;
+    text-shadow: 1px 1px black;
 }
 
 .video-arrow-icon {
@@ -1517,6 +1529,9 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+
 
 @media(max-width: 1720px) {
 
@@ -1615,10 +1630,10 @@ html {
 
     .hamburger {
         display: block;
-        position: absolute;
+        /* position: absolute;
         right: 10px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%); */
         width: 26px;
         height: 12px;
     }
@@ -1659,6 +1674,10 @@ html {
     .features-container {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .feature {
+        padding: 32px 14px 22px 14px;
     }
 
     .feature-logo-wrapper {
@@ -1727,6 +1746,85 @@ html {
 
 
 
+
+
+}
+
+@media (max-width: 570px) {
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .intro-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'text'
+            'button';
+    }
+
+
+    .connection-slogan {
+        width: 100%;
+        text-align: center;
+    }
+
+    .connection-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .connection-button-wrapper {
+
+        margin: 10px auto 0;
+    }
+
+    .apple-button::before,
+    .android-button::before {
+        left: 15%;
+    }
+
+
+
+    .devices {
+        grid-template-columns: 1fr;
+    }
+
+    .devices-benefits-container {
+        text-align: center;
+    }
+
+    .devices-benefits-block:nth-child(1) {
+        order: 2
+    }
+
+    .devices-benefits-block:nth-child(2) {
+        order: 1;
+    }
+
+    .devices-benefits-block:nth-child(3) {
+        order: 3;
+    }
+
+    .devices-benefits-block:nth-child(4) {
+        order: 4;
+    }
+
+    .devices-benefits-block:nth-child(5) {
+        order: 6;
+    }
+
+
+
+    .devices-benefits-block:nth-child(6) {
+        order: 5;
+    }
+
+    .video-icon-wrapper {
+        height: 50px;
+        width: 50px;
+    }
 
 
 }

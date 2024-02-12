@@ -47,7 +47,7 @@ window.addEventListener('scroll', function () {
 const playButton = document.querySelector('.video-icon-wrapper');
 const videoWrapper = document.querySelector('.video-wrapper');
 const videoTitlePage = document.querySelector('.video-title-page');
-// const video = document.querySelector('.video');
+const video = document.querySelector('#player');
 
 function loadVideo() {
   console.info(`loadVideo called`);
@@ -68,8 +68,9 @@ function loadVideo() {
     window.YT.ready(function () {
       player = new window.YT.Player('player', {
         height: '720',
-        width: '1400',
+        width: '1149',
         videoId: '-7BFrSqkc0o',
+
         events: {
           onReady: onPlayerReady,
           //   onStateChange: onPlayerStateChange,
@@ -82,30 +83,11 @@ function loadVideo() {
     event.target.playVideo();
   }
 
-  //   function onPlayerStateChange(event) {
-  //     var videoStatuses = Object.entries(window.YT.PlayerState);
-  //     console.log(videoStatuses.find((status) => status[1] === event.data)[0]);
-  //   }
-}
-
-// if (document.readyState !== 'loading') {
-//   console.info(`document.readyState ==>`, document.readyState);
-//   loadVideo();
-// } else {
-//   document.addEventListener('DOMContentLoaded', function () {
-//     console.info(`DOMContentLoaded ==>`, document.readyState);
-//     videoTitlePage.style.display = 'none';
-//     // videoWrapper.style.display = 'block';
-//     loadVideo();
-//   });
-// }
-
-playButton.addEventListener('click', function () {
   videoTitlePage.style.display = 'none';
   videoWrapper.style.display = 'block';
+  video.style.display = 'block';
+}
 
+playButton.addEventListener('click', function () {
   loadVideo();
-  //   video.style.display = 'block';
-  //   video.src =
-  //     'http://www.youtube.com/embed/-7BFrSqkc0o?enablejsapi&autoplay=1&rel=0';
 });
