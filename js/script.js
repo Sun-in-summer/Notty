@@ -1,3 +1,5 @@
+console.log('script  is loaded');
+
 const animationBlock = document.querySelector('#lottie-animation');
 
 window.addEventListener('load', function () {
