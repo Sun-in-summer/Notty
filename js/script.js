@@ -44,9 +44,16 @@ window.addEventListener('scroll', function () {
   }
 });
 
+const videoFrameContainer = document.querySelector('video-frame-container');
 const playButton = document.querySelector('.video-icon-wrapper');
 const videoWrapper = document.querySelector('.video-wrapper');
 const videoTitlePage = document.querySelector('.video-title-page');
+const videoTitlePagePicture = document.querySelector(
+  '.video-title-page-picture'
+);
+const videoTitlePageContent = document.querySelector(
+  '.video-title-page-content'
+);
 const video = document.querySelector('#player');
 
 function loadVideo() {
@@ -68,7 +75,7 @@ function loadVideo() {
     window.YT.ready(function () {
       player = new window.YT.Player('player', {
         height: '720',
-        width: '1149',
+        width: '1400',
         videoId: '-7BFrSqkc0o',
 
         events: {
@@ -83,9 +90,18 @@ function loadVideo() {
     event.target.playVideo();
   }
 
-  videoTitlePage.style.display = 'none';
+  videoTitlePageContent.classList.add('transparent');
+  videoTitlePagePicture.classList.add('transparent');
+  setTimeout(function () {
+    videoTitlePage.classList.add('hidden');
+  }, 400);
+  setTimeout(function () {
+    videoWrapper.classList.add('not_transparent');
+  }, 400);
   videoWrapper.style.display = 'block';
   video.style.display = 'block';
+
+  // videoTitlePage.style.display = 'none';
 }
 
 playButton.addEventListener('click', function () {
