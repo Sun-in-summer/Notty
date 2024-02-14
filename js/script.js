@@ -107,3 +107,20 @@ function loadVideo() {
 playButton.addEventListener('click', function () {
   loadVideo();
 });
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+
+  loop: true,
+  autoplay: false,
+  // {
+  //   delay: 5000,
+  //   pauseOnMouseEnter: true,
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

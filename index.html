@@ -12,14 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@500;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css" />
   <title>HEY PET!</title>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
 
-  <script async src="./js/script.js" type="module"></script>
+
 </head>
 
 <body class="main-page">
@@ -452,6 +451,78 @@
 
   </div>
 </section>
+<section class="pet-feedbacks">
+  <div class="pet-feedbacks-container container">
+    <div class="pet-feedbacks-header">Любимцы рекомендуют:
+отзывы заботливых клиентов</div>
+<div class="pet-feedbacks-border"></div>
+<div class="pet-feedbacks-slider">
+  <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="slider-slide">
+        <div class="slider-picture"><img src="img/pet-feedbacks1.png"> </div>
+      <div class="slider-content">
+        <div class="slider-content-text"> 
+          “ Супер-помощник! Не надо вставать рано по требованию кошек, можно уезжать и не переживать, что останутся голодными ”
+        </div>
+        <div class="slider-content-user"> — Татьяна Н.</div>
+      </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slider-slide">
+        <div class="slider-picture"><img src="img/pet-feedbacks1.png"> </div>
+      <div class="slider-content">
+        <div class="slider-content-text"> 
+          “ Супер-помощник! Не надо вставать рано по требованию кошек, можно уезжать и не переживать, что останутся голодными ”
+        </div>
+        <div class="slider-content-user"> — Мария.</div>
+      </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slider-slide">
+        <div class="slider-picture"><img src="img/pet-feedbacks1.png"> </div>
+      <div class="slider-content">
+        <div class="slider-content-text"> 
+          “ Супер-помощник! Не надо вставать рано по требованию кошек, можно уезжать и не переживать, что останутся голодными ”
+        </div>
+        <div class="slider-content-user"> — Светлана.</div>
+      </div>
+      </div>
+    </div>
+    ...
+  </div>
+</div>
+
+
+
+</div>
+<!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+<div class="pet-feedbacks-resume">
+  <div class="pet-feedbacks-resume-header">Ваш питомец заслуживает лучшего!</div>
+  <div class="pet-feedbacks-resume-text"> Покупая HEY PET, вы проявляете заботу о благополучии и комфорте вашего четвероногого друга, и получаете гарантию чистоты в доме.</div>
+  <div class="pet-feedbacks-resume-button-wrapper"><a class='pet-feedbacks-resume-button'>Купить</a></div>
+</div>
+
+  </div>
+</section>
+<section class="customer-form">
+  <div class="customer-form-container container">
+    <form class="customer-form-form"></form>
+  </div>
+</section>
+<section class="final">
+  <div class="final-container container">
+    <div class="final-left"></div>
+    <div class="final-right"></div>
+  </div>
+</section>
 
 
 
@@ -485,7 +556,10 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="js/script.js" ></script>
 
 </body>
 
