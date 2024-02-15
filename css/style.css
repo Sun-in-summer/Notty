@@ -2022,6 +2022,11 @@ textarea::-webkit-scrollbar {
         display: none;
     }
 
+    .pet-feedbacks-header {
+        width: 100%;
+        text-align: center;
+    }
+
     .customer-form-form {
         width: 70%
     }
