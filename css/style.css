@@ -1701,6 +1701,111 @@ html {
     padding-bottom: 120px;
 }
 
+.customer-form {
+    background: url(../img/form.png) center center/cover no-repeat;
+    min-height: 740px;
+}
+
+.customer-form-form {
+    margin: 0 auto;
+    width: 30%;
+    padding: 70px 0;
+}
+
+.customer-form-name,
+.customer-form-email,
+.customer-form-text {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: white;
+    margin-top: 50px;
+    border-bottom: 1px solid white;
+}
+
+.customer-form-text {
+    resize: vertical;
+    max-height: 300px;
+
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.customer-form-name:focus-visible,
+.customer-form-email:focus-visible,
+.customer-form-text:focus-visible {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.customer-form-name::placeholder,
+.customer-form-email::placeholder,
+.customer-form-text::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+
+}
+
+.customer-form-submit {
+    background: transparent;
+    border: 1.46px solid white;
+    text-align: center;
+    border-radius: 22px;
+    padding: 16px 16px;
+    margin-top: 65px;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.final-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 80px 75px;
+}
+
+.final-left-list,
+.final-right-list {
+    list-style: none;
+}
+
+.final-left-list-item,
+.final-right-list-item {
+    margin-top: 30px;
+}
+
+.final-left-list-item-link,
+.final-right-list-item-link {
+    text-decoration: none;
+    color: black;
+
+}
+
+.final-right-list-item-logo-text {
+    margin-top: 5px;
+    width: 60%;
+}
+
+.footer {
+    font-size: clamp(0.7rem, 0.6827rem + 0.0769vw, 0.75rem);
+}
+
+.footer-divider {
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    margin: 0 auto 30px;
+}
+
+.footer-policy {
+
+    color: black;
+
+}
 
 @media(max-width: 1720px) {
 
@@ -1915,6 +2020,30 @@ html {
 
     .connection-text {
         display: none;
+    }
+
+    .customer-form-form {
+        width: 70%
+    }
+
+    .final-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .final-right-list-item,
+    .final-left-list-item {
+
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .final-right-list-item-logo-text a {
+        text-align: center;
+    }
+
+    .final-right-list-item-logo-text {
+        margin: 5px auto;
     }
 
 
