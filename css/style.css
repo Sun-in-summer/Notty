@@ -709,7 +709,8 @@ h3 {
 .video-title-page-slogan,
 .pet-feedbacks-header,
 .pet-feedbacks-resume-header,
-.characteristics-slogan {
+.characteristics-slogan,
+.pst-set-header {
     color: #000;
     font-size: clamp(1.2rem, 0.7500rem + 2.0000vw, 2.5rem);
     line-height: clamp(1.2rem, 0.4281rem + 3.4308vw, 3.43rem);
@@ -1462,15 +1463,21 @@ textarea::-webkit-scrollbar {
 .pst-gallery-wrapper {
     margin-top: 46px;
     display: flex;
+    gap: 16px;
 
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 100px;
 }
 
+.pst-gallery-image {
+    flex-basis: 50%;
+}
+
 .pst-gallery-image img {
     object-fit: cover;
     width: 100%;
+
 }
 
 .pst-page-tabs-container {
@@ -1600,6 +1607,36 @@ textarea::-webkit-scrollbar {
 .characteristics-list-item:last-child>.characteristics-list-item-column-right,
 .characteristics-list-item:last-child>.characteristics-list-item-column-left {
     border-bottom: none;
+}
+
+.pst-set-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 70px;
+}
+
+.pst-set-image {
+    flex-basis: 50%;
+}
+
+.pst-set-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pst-set-content {
+    flex-basis: 50%;
+    padding-left: 30px;
+}
+
+.pst-set-header {
+    padding-top: 30px;
+}
+
+.pst-set-list {
+    padding-left: 20px;
 }
 
 @media(max-width: 1720px) {
