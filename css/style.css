@@ -522,7 +522,7 @@ h3 {
     height: 260px;
     display: block;
     object-fit: scale-down;
-    position: absolute;
+
     bottom: 70px;
 
 }
@@ -623,7 +623,7 @@ h3 {
 }
 
 .features {
-    margin-top: 60px;
+    padding-top: 140px;
 }
 
 .feature {
@@ -1019,6 +1019,7 @@ h3 {
     max-width: 1400px;
     margin: 0 auto;
     /* display: flex; */
+    padding-top: 160px;
 }
 
 .video-wrapper {
@@ -1345,16 +1346,30 @@ textarea::-webkit-scrollbar {
 
 }
 
+.customer-form-element {
+    border: none;
+}
+
 .customer-form-submit {
     background: transparent;
     border: 1.46px solid white;
     text-align: center;
     border-radius: 22px;
-    padding: 16px 16px;
+    padding: 16px 36px;
     margin-top: 65px;
     color: white;
     font-size: 1rem;
+    cursor: pointer;
 
+}
+
+.customer-form-element--invalid {
+    color: orange;
+    font-weight: 1200;
+}
+
+.customer-form-submit:focus-visible {
+    border: none;
 }
 
 .final-container {
@@ -1410,10 +1425,15 @@ textarea::-webkit-scrollbar {
     margin: 0;
 }
 
+/* .pst-wrapper {
+    padding-top: 150px;
+} */
+
 
 
 .pst-page-header {
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 99999999999;
     width: 100%;
     background-color: white;
@@ -1424,7 +1444,7 @@ textarea::-webkit-scrollbar {
 }
 
 .pst-page-intro-container {
-    padding-top: 197px;
+    padding-top: 47px;
 
 }
 
@@ -1467,7 +1487,7 @@ textarea::-webkit-scrollbar {
 
     justify-content: space-between;
     align-items: flex-start;
-    padding-bottom: 100px;
+
 }
 
 .pst-gallery-image {
@@ -1486,6 +1506,13 @@ textarea::-webkit-scrollbar {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.pst-page-tabs-section {
+    position: sticky;
+    top: 87px;
+    background: white;
+    z-index: 101;
+}
+
 .pst-page-tabs {
     list-style: none;
     display: flex;
@@ -1494,6 +1521,8 @@ textarea::-webkit-scrollbar {
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 25px;
+
+
 
 }
 
@@ -1540,6 +1569,10 @@ textarea::-webkit-scrollbar {
 .feature-logo-wrapper svg {
     height: 50px;
     width: 50px;
+}
+
+.characteristics {
+    padding-top: 100px;
 }
 
 .characteristics-download {
@@ -1614,6 +1647,7 @@ textarea::-webkit-scrollbar {
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
+    padding-top: 170px;
     padding-bottom: 70px;
 }
 

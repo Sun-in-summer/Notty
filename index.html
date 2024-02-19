@@ -40,10 +40,10 @@
                 <a class="nav-link" href="about/index.html">Как это работает</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services/index.html">Товары</a>
+                <a class="nav-link" href="products/index.html">Товары</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacts/index.html">Связаться с нами</a>
+                <a class="nav-link" href="#connect-to-us">Связаться с нами</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link-btn " href="contacts/index.html">Купить</a>
@@ -107,7 +107,7 @@
 
           <div class="presentation-product-picture-container">
 
-            <img class="presentation-product-picture" src="img/litter-box.png" />
+            <a href="../products/pst001.html"><img class="presentation-product-picture" src="img/litter-box.png" /></a>
           </div>
           <div class="presentation-product-features">
             <div class="presentation-product-feature">
@@ -124,7 +124,7 @@
         <div class="presentation-product">
           <div class="presentation-product-header">Aвтокормушка PSF-001</div>
           <div class="presentation-product-picture-container ">
-            <img class="presentation-product-picture" src="img/feeder-small.png" />
+            <a href="../products/psf.html"><img class="presentation-product-picture" src="img/feeder-small.png" /></a>
           </div>
           <div class="presentation-product-features">
             <div class="presentation-product-feature">
@@ -142,7 +142,8 @@
         <div class="presentation-product">
           <div class="presentation-product-header">Aвтопоилка PSW-001</div>
           <div class="presentation-product-picture-container last">
-            <img class="presentation-product-picture last" src="img/fountain-front.png" />
+            <a href="../products/psw.html"><img class="presentation-product-picture last"
+                src="img/fountain-front.png" /></a>
           </div>
           <div class="presentation-product-features">
             <div class="presentation-product-feature">
@@ -522,13 +523,31 @@
 
     </div>
   </section>
-  <section class="customer-form">
+  <section class="customer-form" id="connect-to-us">
     <div class="customer-form-container container">
-      <form action class="customer-form-form">
-        <input class="customer-form-name" type="'text" placeholder="Ваше имя">
-        <input class="customer-form-email" type="'email" placeholder="Ваш E-mail">
-        <textarea class="customer-form-text" placeholder="Ваше сообщение" rows="1"></textarea>
-        <input class="customer-form-submit" type="'submit" value="Задать вопрос">
+      <form method="post" action="###" class="customer-form-form">
+        <fieldset class="customer-form-element"><input id="username" class=" customer-form-name" type="'text"
+            placeholder="Ваше имя" name="username" required minlength="2" maxlength="25"
+            data-pristine-required-message="Обязательное поле"
+            data-pristine-minlength-message="Минимальная длина 2 символа"
+            data-pristine-maxlength-message="Максимальная длина 25 символов"></fieldset>
+
+
+        <fieldset class="customer-form-element"><input id='user-email' class="customer-form-email" type="'email"
+            placeholder="Ваш E-mail" name="email" required minlength="5"
+            data-pristine-required-message="Обязательное поле"
+            data-pristine-minlength-message="Минимальная длина 5 символов"></fieldset>
+
+
+        <fieldset class="customer-form-element"><textarea id='user-text' class=" customer-form-text"
+            placeholder="Ваше сообщение" rows="1" name="text" minlength='5' required
+            data-pristine-required-message="Обязательное поле"
+            data-pristine-minlength-message="Минимальная длина 5 символов"></textarea></fieldset>
+
+
+        <fieldset class="customer-form-element"><button class="customer-form-submit" type="'submit">Задать
+            вопрос</button></fieldset>
+
       </form>
     </div>
   </section>
@@ -552,7 +571,7 @@
             <a class="final-left-list-item-link" href="#">Часто задаваемые вопросы</a>
           </li>
           <li class="final-left-list-item">
-            <a class="final-left-list-item-link" href="#">Связаться с нами</a>
+            <a class="final-left-list-item-link" href="#connect-to-us">Связаться с нами</a>
           </li>
         </ul>
       </div>
@@ -632,6 +651,8 @@
 
   <script src="js/lottie.min.js"></script>
   <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="pristine/pristine.min.js"></script>
+  <script type="module" src='js/form.js'></script>
   <script type="module" src="js/script.js"></script>
 
 </body>
