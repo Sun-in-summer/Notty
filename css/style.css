@@ -167,8 +167,9 @@ h3 {
 
 
 .main-page-intro {
+    position: fixed;
     background: url(../img/section1banner2.png) center center/cover no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     top: 0;
     left: 0;
     height: 100%;
