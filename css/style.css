@@ -163,6 +163,7 @@ h3 {
  
     background: url(../img/section1banner2.png) center center/ cover no-repeat;
     background-attachment: fixed;
+    height: 100vh;
       
 }
 
@@ -2079,6 +2080,10 @@ textarea::-webkit-scrollbar {
 
     .pst-gallery-wrapper {
         flex-wrap: wrap;
+    }
+
+    .main-page-intro {
+        background-attachment: scroll;
     }
 
 }
