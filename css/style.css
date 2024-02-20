@@ -15,6 +15,14 @@ html {
     font-size: 16px;
     font-family: Eastman;
     font-weight: 400;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    min-height: 100%;
 }
 
 .preloader {
