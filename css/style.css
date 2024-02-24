@@ -259,6 +259,10 @@ h3 {
 
 }
 
+.nav-link:focus-visible {
+    border: none;
+    outline: none;
+}
 
 
 .nav-link-btn {
@@ -309,6 +313,11 @@ h3 {
     filter: brightness(0);
     margin-right: 30px;
     margin-top: 10px;
+}
+
+.nav-item:focus-visible {
+    border: none;
+    outline: none;
 }
 
 .nav-item:not(:last-child) {
