@@ -629,7 +629,7 @@ h3 {
 }
 
 .button {
-    display: inline-block;
+    /* display: inline-block; */
     transition: all 1s;
     position: relative;
     overflow: hidden;
