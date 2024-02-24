@@ -391,7 +391,7 @@ h3 {
     letter-spacing: -1px;
     color: black;
     font-weight: 500;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 2px 0px 2px white;
     margin: 0;
 
 }
@@ -462,6 +462,9 @@ h3 {
 
     grid-area: button;
     padding: 0px 0px 0 0;
+    justify-self: start;
+    align-self: end;
+    padding-bottom: 40px;
 }
 
 
@@ -480,6 +483,7 @@ h3 {
     height: 56px;
     width: 210px;
     margin: 0 auto;
+
 
 }
 
