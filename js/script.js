@@ -37,7 +37,7 @@ const animation = lottie.loadAnimation({
   loop: true, // зацикливание анимации
   autoplay: false, // автоматический запуск анимации
   path: './preloader/lottie6.json', // путь к вашему JSON-файлу с анимацией
-  setSpeed: 1,
+  setSpeed: 5,
 });
 
 window.addEventListener('scroll', function () {
