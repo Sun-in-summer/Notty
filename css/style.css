@@ -163,7 +163,9 @@ h3 {
 
     background: url(../img/section1banner2.png) center center/ cover no-repeat;
     /* background-attachment: fixed; */
-    height: 100vh;
+    height: 100dvh;
+    transition: all 0.3s;
+
 
 }
 
