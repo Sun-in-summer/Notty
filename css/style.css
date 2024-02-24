@@ -2087,6 +2087,11 @@ textarea::-webkit-scrollbar {
         order: 8;
     }
 
+    .bgcover {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
 
 }
 
@@ -2095,6 +2100,8 @@ textarea::-webkit-scrollbar {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+
 }
 
 @media (max-width: 400px) {
