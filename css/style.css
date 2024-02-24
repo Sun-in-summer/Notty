@@ -190,14 +190,14 @@ h3 {
 
 .intro-container {
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: auto 1fr 150px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     grid-template-areas:
         "header header header "
         "text text  . "
         "button .   . ";
     height: 100svh;
-    max-height: 100svmin;
+
     row-gap: 30px;
     column-gap: 30px;
 
