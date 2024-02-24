@@ -190,6 +190,7 @@ h3 {
 
 .intro-container {
     display: grid;
+    justify-items: left;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
@@ -198,7 +199,7 @@ h3 {
         "button .   . ";
     height: 100svh;
 
-    row-gap: 30px;
+    row-gap: 10px;
     column-gap: 30px;
 
     overflow: hidden;
