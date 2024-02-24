@@ -2088,7 +2088,7 @@ textarea::-webkit-scrollbar {
     }
 
     .bgcover {
-        background-attachment: scroll;
+        background-attachment: initial;
         background-size: cover;
     }
 
