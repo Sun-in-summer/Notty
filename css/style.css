@@ -197,7 +197,7 @@ h3 {
         "text text  . "
         "button .   . ";
     height: 100svh;
-    max-height: 100vmin;
+    max-height: 100svmin;
     row-gap: 30px;
     column-gap: 30px;
 
