@@ -9,6 +9,8 @@ window.addEventListener('load', function () {
   const preloader = document.querySelector('.box');
   preloader.classList.add('disabled');
   animationBlock.classList.remove('disabled');
+  const images = document.querySelectorAll('.ukiyo');
+  new Ukiyo(images);
 });
 
 function elemInViewport(elem, full) {
