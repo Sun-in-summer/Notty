@@ -164,7 +164,8 @@ h3 {
     background: url(../img/section1banner2.png) center center/ cover no-repeat;
     /* background-attachment: fixed; */
     height: 100dvh;
-    transition: all 0.3s;
+    max-height: 100%;
+    transition: all 0.5s ease-out;
 
 
 }
@@ -178,7 +179,8 @@ h3 {
         "header header header "
         "text text  . "
         "button .   . ";
-    height: 100vh;
+    height: 100dvh;
+    max-height: 100%;
     row-gap: 30px;
     column-gap: 30px;
 
