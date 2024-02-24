@@ -26,55 +26,58 @@
   <div class="box"><img src='./img/hey-pet-preloader.gif' /></div>
 
   <section class="main-page-intro  ">
+    <div class="bgcover">
+      <div class="intro-container container">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-absolute">
 
 
-    <div class="intro-container container">
-      <nav class="navbar navbar-expand-lg navbar-light navbar-absolute">
+          <div class="navbar-flex">
 
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" /></a>
 
-        <div class="navbar-flex">
-
-          <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" /></a>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a class="nav-link" href="about/index.html">Как это работает</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products/index.html">Товары</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#connect-to-us">Связаться с нами</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link-btn " href="contacts/index.html">Купить</a>
-              </li>
-            </ul>
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a class="nav-link" href="about/index.html">Как это работает</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products/index.html">Товары</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#connect-to-us">Связаться с нами</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link-btn " href="contacts/index.html">Купить</a>
+                </li>
+              </ul>
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
+
           </div>
+        </nav>
+
+
+        <div class="intro-main-text">
+          <h1 class="home-h1">Умные
+            решения для счастливых
+            питомцев</h1>
+
 
         </div>
-      </nav>
-
-
-      <div class="intro-main-text">
-        <h1 class="home-h1">Умные
-          решения для счастливых
-          питомцев</h1>
+        <div class="intro-sect-details">
+          <a class="intro-sect-details-link button">Подробнее</a>
+        </div>
 
 
       </div>
-      <div class="intro-sect-details">
-        <a class="intro-sect-details-link button">Подробнее</a>
-      </div>
-
-
     </div>
+
+
+
 
 
 
@@ -660,6 +663,11 @@
   <script src="pristine/pristine.min.js"></script>
   <script type="module" src='js/form.js'></script>
   <script type="module" src="js/script.js"></script>
+  <script type="text/javascript">
+    if (navigator.userAgent.match(/(iPad|iPhone|iPod|Android|Silk)/gi)) {
+      document.write("<link rel=\"stylesheet\" href=\"fixparallax.css\" />");
+    }
+  </script>
 
 </body>
 
