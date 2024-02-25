@@ -27,9 +27,12 @@ function loadVideo(videoId) {
   function setupPlayer() {
     window.YT.ready(function () {
       player = new window.YT.Player('player', {
-        height: '720',
-        width: '1400',
+        height: '75%',
+        width: '100%',
         videoId: videoId,
+        controls: 0,
+        rel: 0,
+        showinfo: 0,
         events: {
           onReady: onPlayerReady,
         },
