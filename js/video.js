@@ -46,14 +46,14 @@ function loadVideo(videoId) {
 
   videoTitlePageContent.classList.add('transparent');
   videoTitlePagePicture.classList.add('transparent');
-  setTimeout(function () {
-    videoTitlePage.classList.add('hidden');
-  }, 400);
+  // setTimeout(function () {
+  //   videoTitlePage.classList.add('hidden');
+  // }, 500);
   setTimeout(function () {
     videoWrapper.classList.add('not_transparent');
   }, 400);
-  videoWrapper.style.display = 'block';
-  video.style.display = 'block';
+  //  videoWrapper.style.display = 'block';
+  // video.style.display = 'block';
 }
 
 export { loadVideo };
