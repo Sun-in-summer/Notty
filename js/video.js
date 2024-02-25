@@ -1,6 +1,6 @@
 function loadVideo(videoId) {
   const videoFrameContainer = document.querySelector('video-frame-container');
-  const playButton = document.querySelector('.video-icon-wrapper');
+
   const videoWrapper = document.querySelector('.video-wrapper');
   const videoTitlePage = document.querySelector('.video-title-page');
   const videoTitlePagePicture = document.querySelector(

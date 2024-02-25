@@ -1165,7 +1165,7 @@ ul {
     height: 100%;
     object-fit: cover;
     opacity: 1;
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
     min-height: 250px;
 }
 
@@ -1193,6 +1193,7 @@ ul {
     position: absolute;
     left: 0;
     top: 0;
+    transition: all .5s ease-in-out;
 }
 
 .video-title-page-slogan {
@@ -1982,9 +1983,11 @@ textarea::-webkit-scrollbar {
 
     .slider-content {
         display: flex;
+        flex-direction: column;
         width: 100%;
         flex-basis: 100%;
         gap: 30px;
+        align-items: center;
 
     }
 
