@@ -4,7 +4,7 @@ import { handleProductPageLoader } from './loader.js';
 // import Swiper from 'swiper';
 
 const PST_VIDEO_ID = 'NbJORoFdIa0';
-// const header = document.querySelector('.pst-page-header ');
+// const header = document.querySelector('.page-header ');
 const playButton = document.querySelector('.video-icon-wrapper');
 
 window.addEventListener('load', function () {

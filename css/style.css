@@ -1221,17 +1221,17 @@ ul {
 }
 
 .video-title-page-slogan {
+    color: black;
 
     width: 100%;
-    color: white;
     padding-left: 50px;
     padding-top: 5%;
-    text-shadow: 1px 1px black;
+
 }
 
-.psf-page.video-title-page-slogan,
-.psw-page.video-title-page-slogan {
-    color: black;
+.pst-page.video-title-page-slogan {
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 .video-title-page-text {
@@ -1240,11 +1240,12 @@ ul {
     color: black;
     padding-left: 50px;
     padding-top: 5%;
-    text-shadow: 1px 1px black;
+
 }
 
 .pst-page.video-title-page-text {
     color: white;
+    text-shadow: 1px 1px black;
 }
 
 .video-icon-wrapper {
@@ -1267,11 +1268,12 @@ ul {
     margin-left: 120px;
     font-size: 1.68rem;
     line-height: 93px;
-    text-shadow: 1px 1px black;
+
 }
 
 .pst-page.video-icon-wrapper::after {
     color: white;
+    text-shadow: 1px 1px black;
 }
 
 .video-arrow-icon {
@@ -1558,8 +1560,7 @@ textarea::-webkit-scrollbar {
 
 }
 
-.pst-page-body,
-.psf-page-body {
+.page-body {
     margin: 0;
 }
 
@@ -1569,8 +1570,8 @@ textarea::-webkit-scrollbar {
 
 
 
-.pst-page-header,
-.psf-page-header {
+
+.page-header {
     position: sticky;
     top: 0;
     z-index: 99999999999;
@@ -1582,8 +1583,8 @@ textarea::-webkit-scrollbar {
     box-shadow: 0px 17px 38px -6px rgba(0, 0, 0, 0.25);
 }
 
-.pst-page-intro-container,
-.psf-page-intro-container {
+
+.page-intro-container {
     padding-top: 47px;
 
 }
