@@ -1,4 +1,3 @@
-console.log('script  is loaded');
 import { loadVideo } from './video.js';
 import { handleHamburger } from './hamburger.js';
 import { handleMainLoader } from './loader.js';
@@ -67,3 +66,20 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const onBenefitDescriptionListClick = (event) => {
+  if (event.target.closest('.benefits-flex-list-item')) {
+    const foundBlock = event.target.closest('.benefits-flex-list-item');
+    const description = foundBlock.querySelector(
+      '.benefits-flex-list-description'
+    );
+    description.classList.toggle('visible');
+  }
+};
+
+const openBenefitDescriptionList = document.querySelector('.devices');
+
+openBenefitDescriptionList.addEventListener(
+  'click',
+  onBenefitDescriptionListClick
+);

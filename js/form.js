@@ -1,6 +1,13 @@
-const form = document.querySelector('.customer-form-form');
-console.log('pristine');
+import { sendData } from './api.js';
+import {
+  createErrorMessage,
+  createSuccessMessage,
+  resetForm,
+} from './messages.js';
 
+const form = document.querySelector('.customer-form-form');
+
+// eslint-disable-next-line no-undef
 const pristine = new Pristine(form, {
   classTo: 'customer-form-element',
   errorTextParent: 'customer-form-element',
@@ -32,7 +39,6 @@ form.addEventListener('submit', (evt) => {
         unblockSubmitButton();
         createSuccessMessage();
         form.reset();
-        closePopup();
       },
       () => {
         createErrorMessage();

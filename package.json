@@ -1,6 +1,15 @@
 {
   "dependencies": {
     "locomotive-scroll": "^4.1.4",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "pristine": "^0.0.1"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --no-ui --files \"js/**/*.js\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.2.0"
   }
 }

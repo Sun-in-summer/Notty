@@ -1,3 +1,5 @@
+const animationBlock = document.querySelector('#lottie-animation');
+
 const handleMainLoader = () => {
   const preloader = document.querySelector('.box');
   preloader.classList.add('disabled');
