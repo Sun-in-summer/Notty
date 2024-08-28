@@ -1,10 +1,12 @@
 const sendData = (onSuccess, onFail, body) => {
-  fetch('https://jsonplaceholder.typicode.com/posts', {
+  // fetch('https://jsonplaceholder.typicode.com/posts', {
+  fetch('send.php', {
     method: 'POST',
-    body: JSON.stringify(Object.fromEntries(body)),
-    headers: {
-      'Content-type': 'multipart/form-data',
-    },
+    body,
+    // body: JSON.stringify(Object.fromEntries(body)),
+    // headers: {
+    //   'Content-type': 'multipart/form-data',
+    // },
   })
     .then((response) => {
       if (response.ok) {
